@@ -28,6 +28,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/social.js"></script>
 <!--   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ae784db256cbf0011980410&product=sticky-share-buttons"></script> -->
 
@@ -67,10 +71,10 @@
         <p>Get tips, tools, and best practices via email</p>
       </div>
 
-      <div class="email-octopus-form-wrapper">
+      <div class="email-octopus-form-wrapper js-email-octopus-form-wrapper">
           <form method="post"
             action="https://emailoctopus.com/lists/b7cda194-4ca8-11e8-a3c9-06b79b628af2/members/embedded/1.1/add"
-            class="email-octopus-form"
+            class="email-octopus-form js-email-octopus-form"
           >
             <div class="email-octopus-form-row">
               <input id="field_0" name="embedded_form_subscription[field_0]" type="email" placeholder="Enter your email for updates">
@@ -89,13 +93,16 @@
 
             </div>
           </form>
+          <button class="mobile-cancel js-mobile-cancel">Cancel</button>
       </div>
-      <button class="mobile-form-btn">Get email updates</button>
-      <ul class="bottom-share-button-container">
-        <li><a href="javascript:void(0)" id="fb-share" class="bottom-share-button" data-sharer="facebook" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/facebook-icon.svg" alt="facebook share button" /></a></li>
-        <li><a href="javascript:void(0)" id="tweet" class="bottom-share-button" data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/twitter-icon.svg" alt="twitter share button" /></a></li>
-        <li><a href="javascript:void(0)" id="linkedin" class="bottom-share-button" data-sharer="linkedin" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/linkedin-icon.svg" alt="linkedin share button" /></a></li>
-      </ul>
+      <div class="mobile-btn-container js-mobile-btn-container">
+        <button class="mobile-form-btn js-mobile-form-btn">Get email updates</button>
+        <ul class="bottom-share-button-container">
+          <li><a href="javascript:void(0)" id="fb-share" class="bottom-share-button" data-sharer="facebook" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/facebook-icon.svg" alt="facebook share button" /></a></li>
+          <li><a href="javascript:void(0)" id="tweet" class="bottom-share-button" data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/twitter-icon.svg" alt="twitter share button" /></a></li>
+          <li><a href="javascript:void(0)" id="linkedin" class="bottom-share-button" data-sharer="linkedin" data-url="https://ellisonleao.github.io/sharer.js/"><img src="images/linkedin-icon.svg" alt="linkedin share button" /></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 

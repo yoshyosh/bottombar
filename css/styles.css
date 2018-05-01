@@ -95,6 +95,22 @@ ul {
   list-style: none;
 }
 
+/* CSS animate */
+
+.mobile-btn-container {
+  transform: translateX(0);
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+}
+
+.mobile-btn-container.active {
+  transform: translateX(400px);
+}
+
+.mobile-cancel {
+  display: none;
+}
+
 /* Larger than desktop 1000*/
 @media (max-width: 1024px) {
   .super-bottom-bar .container {
@@ -121,6 +137,10 @@ ul {
 @media (max-width: 550px) {
   .email-octopus-form-wrapper {
     display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   .mobile-form-btn {
     display: inline-block;
@@ -132,5 +152,27 @@ ul {
   .super-bottom-bar .container {
     width: 85%;
     padding: 0;
+  }
+  .email-octopus-form-wrapper{
+    display: inline-block;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    transform: translateX(-400px);
+  }
+  .email-octopus-form-wrapper.active{
+    transform: translateX(0);
+  }
+  .email-octopus-form-row {
+    width: 170px;
+  }
+  .mobile-cancel {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    padding: 0px 10px;
+    height: 32px;
+    margin: 0;
+    line-height: 32px;
   }
 }
