@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src:  url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+
+body {
+  padding-bottom: 60px;
+  font-family: "ProximaNova", "Helvetica-Neue";
+}
+
+.super-bottom-bar {
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.super-bottom-bar p {
+  margin: 0;
+  line-height: 20px;
+}
+
+.super-bottom-bar p:nth-child(1) {
+  font-weight: bold;
+}
+
+.bottom-bar-signup-text {
+  float: left;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+
+.email-octopus-form-wrapper {
+  float: left;
+  height: 32px;
+  padding: 14px 0;
+}
+
+.email-octopus-form-row {
+  float: left;
+  line-height: 32px;
+  margin: 0;
+  width: 270px;
+}
+
+.email-octopus-form-row-subscribe {
+  float: left;
+  margin-top: 0;
+}
+
+.email-octopus-form-row-subscribe button {
+  height: 32px;
+  line-height: 32px;
+  background-color: #54C088;
+  color: #fff;
+  border: none;
+  padding: 0 16px;
+  margin: 0;
+}
+
+.bottom-share-button {
+  display: inline-block;
+  height: 32px;
+  border: 1px solid #A09B97;
+  border-radius: 32px;
+}
+
+.bottom-share-button-container {
+  float: right;
+  margin: 0;
+  height: 34px;
+  padding: 13px 0;
+}
+
+.bottom-share-button-container li {
+  display: inline-block;
+  margin: 0;
+}
+
+.mobile-form-btn {
+  display: none;
+  height: 32px;
+  line-height: 32px;
+  margin: 14px 0;
+  color: #fff;
+  background-color: #54C088;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Larger than desktop 1000*/
+@media (max-width: 1024px) {
+  .super-bottom-bar .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .bottom-bar-signup-text p:nth-child(1){
+    display: none;
+  }
+  .bottom-bar-signup-text p:nth-child(2){
+    font-weight: bold;
+    max-width: 200px;
+  }
+}
+
+/* Larger than tablet 750*/
+@media (max-width: 750px) {
+  .bottom-bar-signup-text {
+    display: none;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+  .email-octopus-form-wrapper {
+    display: none;
+  }
+  .mobile-form-btn {
+    display: inline-block;
+  }
+}
+
+/* Larger than mobile */
+@media (max-width: 410px) {
+  .super-bottom-bar .container {
+    width: 85%;
+    padding: 0;
+  }
+}
