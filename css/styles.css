@@ -41,10 +41,34 @@ body {
   padding: 10px 0;
 }
 
+.email-success {
+  display: none;
+  font-weight: bold;
+  transition-duration: .4s;
+  transition-timing-function: ease-in;
+}
+
+.bottom-bar-signup-text.show-success {
+  padding: 17px 0;
+}
+
+.bottom-bar-signup-text.show-success p {
+  display: none;
+}
+
+.bottom-bar-signup-text.show-success .email-success {
+  display: inline-block;
+}
+
+
 .email-octopus-form-wrapper {
   float: left;
   height: 32px;
   padding: 14px 0;
+}
+
+.email-octopus-form-wrapper.perma-hide {
+  display: none;
 }
 
 .email-octopus-form-row {
@@ -52,6 +76,10 @@ body {
   line-height: 32px;
   margin: 0;
   width: 270px;
+}
+
+.email-octopus-form-row input {
+  line-height: 32px;
 }
 
 .email-octopus-form-row-subscribe {
@@ -67,6 +95,8 @@ body {
   border: none;
   padding: 0 16px;
   margin: 0;
+  margin-left: -10px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 .bottom-share-button {
@@ -96,6 +126,10 @@ body {
   color: #fff;
   background-color: #54C088;
   border: none;
+}
+
+.mobile-form-btn.perma-hide {
+  display: none !important;
 }
 
 ul {
@@ -137,6 +171,10 @@ ul {
 @media (max-width: 750px) {
   .bottom-bar-signup-text {
     display: none;
+  }
+  .bottom-bar-signup-text.show-success {
+    display: inline-block;
+    max-width: 450px;
   }
 }
 

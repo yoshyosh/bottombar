@@ -27,11 +27,14 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+
 <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="js/debug.addIndicators.min.js"></script>
 <script type="text/javascript" src="js/social.js"></script>
 <!--   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ae784db256cbf0011980410&product=sticky-share-buttons"></script> -->
 
@@ -42,9 +45,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
+      <div class="one-half column" style="margin-top: 35%">
         <h4 class="js-scroll-title">Scroll down</h4>
         <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+        <p>
+        Rather than going down the little passage way to the left of Starbucks, keep walking left so you’re facing the left of this picture. You should see a tall building called Shibuya 109. There’s lots to sight see as you stroll along this path. On your right there are several good sweet shops.
+
+        Anytime you pass a Family Mart and you’re looking for something quick there are several items to try.
+        </p>
+        <p>
+        Family mart chicken and the tuna onigiri are solid. The hot dogs on a stick are also good for snacking. Some people also like the restaurant Moss Burger, which has a unique take on burgers using rice patties as the bread for some items. Personally it was a bit too sweet for me, but others really love it.
+        <h4 id="js-scroll-trigger">Reveal bar</h4>
+        There’s a lot to see and do in Shibuya. Any curry shop you run into will most likely be good. Usually you purchase your ticket outside from a push button machine and then you bring it inside to get your meal. Look for Coco curry and don’t get the biggest meal they have, you won’t be able to finish it.
+
+        My favorite Izakaya is in Shibuya, it’s still fairly hidden but can get pretty busy around dinner hours.
+        </p>
         <p>
         If you go to the Starbucks lounge you can watch this for hours. For night life walk left of the Starbucks and you’ll see a little spot on your right called Gas Panic which is a bar where you must have a drink in hand at all times. Lots of foreigns go there so ymmv, but it’s a fun place to hang out for a quick drink. Another place is Camelot (much further away), trip advisor is probably best for discovering night life. Friday and Saturday are the only nights that are good, everything will be dead otherwise!
 
@@ -56,19 +71,15 @@
         </p>
         <p>
         Family mart chicken and the tuna onigiri are solid. The hot dogs on a stick are also good for snacking. Some people also like the restaurant Moss Burger, which has a unique take on burgers using rice patties as the bread for some items. Personally it was a bit too sweet for me, but others really love it.
-
-        There’s a lot to see and do in Shibuya. Any curry shop you run into will most likely be good. Usually you purchase your ticket outside from a push button machine and then you bring it inside to get your meal. Look for Coco curry and don’t get the biggest meal they have, you won’t be able to finish it.
-
-        My favorite Izakaya is in Shibuya, it’s still fairly hidden but can get pretty busy around dinner hours.
-        </p>
       </div>
     </div>
   </div>
-  <div class="super-bottom-bar">
+  <div id="super-bottom-bar" class="super-bottom-bar .js-super-bottom-bar">
     <div class="container">
-      <div class="bottom-bar-signup-text">
+      <div class="bottom-bar-signup-text js-bottom-bar-signup-text">
         <p>Be first to access to our latest creations</p>
         <p>Get tips, tools, and best practices via email</p>
+        <p class="email-success">Thanks for subscribing!</p>
       </div>
 
       <div class="email-octopus-form-wrapper js-email-octopus-form-wrapper">
@@ -89,7 +100,7 @@
               <input type="hidden"
                    name="successRedirectUrl"
                    value="">
-              <button type="submit">Subscribe</button>
+              <button class="email-subscribe-btn js-subscribe-btn" type="submit">Subscribe</button>
 
             </div>
           </form>
